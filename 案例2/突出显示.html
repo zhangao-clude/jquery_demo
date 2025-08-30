@@ -39,29 +39,37 @@
         }
     </style>
     <script src="jquery.min.js"></script>
-
+    <script>
+        $(function () {
+            $(".wrap li").hover(function () {
+                $(this).siblings().stop().fadeTo(400, .5);
+            }, function () {
+                $(this).siblings().stop().fadeTo(400, 1);
+            })
+        })
+    </script>
 </head>
 
 <body>
     <div class="wrap">
         <ul>
             <li>
-                <a href="#"><img src="images/01.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="images/01.jpg" alt="" /></a>
             </li>
             <li>
-                <a href="#"><img src="images/02.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="images/02.jpg" alt="" /></a>
             </li>
             <li>
-                <a href="#"><img src="images/03.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="images/03.jpg" alt="" /></a>
             </li>
             <li>
-                <a href="#"><img src="images/04.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="images/04.jpg" alt="" /></a>
             </li>
             <li>
-                <a href="#"><img src="images/05.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="images/05.jpg" alt="" /></a>
             </li>
             <li>
-                <a href="#"><img src="images/06.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="images/06.jpg" alt="" /></a>
             </li>
         </ul>
     </div>
